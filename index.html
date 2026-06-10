@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="bg-circle left"></div>
+        <div class="bg-circle right"></div>
+        <!-- Navbar -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="ri-github-fill"></i>
+                <h2>GitHub <span>Finder</span></h2>
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+
+                <button id="themeBtn">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+
+        </nav>
+
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+            <div class="dots"></div>
+
+            <h1>
+                GitHub <span>Profile Finder</span>
+            </h1>
+
+            <p>
+                Discover developers, repositories,
+                followers and coding activity.
+            </p>
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input type="text" id="usernameInput" placeholder="Enter GitHub Username">
+
+                <button id="searchIcon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+            </div>
+
+            <button id="searchBtn">
+                Search Profile
+            </button>
+
+
+            <!-- Trending -->
+
+            <div class="trending">
+
+                <p>Trending Searches:</p>
+
+                <div class="tags">
+
+                    <button class="trend-btn" id="torvalds">
+                        torvalds
+                    </button>
+
+                    <button class="trend-btn" id="gaearon">
+                        gaearon
+                    </button>
+
+                    <button class="trend-btn" id="addyosmani">
+                        addyosmani
+                    </button>
+
+                    <button class="trend-btn" id="saksham">
+                        sakshamkhare18
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <div id="profileContainer" class="profileContainer">
+        <!-- <div class="profilecard">
+            <img src="imgs/—Pngtree—man avatar image for profile_13001882.png">
+            <h2>name</h2>
+            <p>Username</p>
+            <p>followers</p>
+            <p>following</p>
+        </div> -->
+    </div>
+    <script src="app.js"></script>
+    <footer class="footer">
+
+        <div class="footer-copy">
+           <p> © 2026 GitHub Profile Finder • Built with ❤️ by Saksham</p>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>
