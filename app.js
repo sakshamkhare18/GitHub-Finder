@@ -54,7 +54,11 @@ const repos = await repoResponse.json();
     </span>
 
     <span>
-        🔗 ${data.blog || "No Website"}
+        🔗 ${data.blog
+      ? `<a href="${data.blog}" target="_blank">
+            Visit Website
+         </a>`
+      : "Not Available"}
     </span>
 
     <span>
@@ -164,11 +168,13 @@ const repos = await repoResponse.json();
             Blog
         </div>
 
-        <div class="info-value">
-            ${data.blog
-                ? `<a href="${data.blog}" target="_blank">${data.blog}</a>`
-                : "Not Available"}
-        </div>
+     <div class="info-value">
+    ${data.blog
+      ? `<a href="${data.blog}" target="_blank">
+            Visit Website
+         </a>`
+      : "Not Available"}
+</div>
 
     </div>
 

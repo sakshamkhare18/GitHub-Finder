@@ -903,7 +903,7 @@ body.light-theme a{
 .quick-info {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap: 20px;
 }
 
@@ -943,7 +943,7 @@ body.light-theme a{
     }
 
     .quick-info {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .repo-grid {
